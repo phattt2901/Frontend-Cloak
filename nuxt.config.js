@@ -1,8 +1,4 @@
 export default {
-  routeRules: {
-    // Use client-side rendering for all routes
-    '/**': { ssr: true },
-  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Google Sites',
