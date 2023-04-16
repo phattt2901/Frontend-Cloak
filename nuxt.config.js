@@ -1,34 +1,33 @@
 export default {
+  routeRules: {
+    // Use client-side rendering for all routes
+    '/**': { ssr: false },
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Google Sites',
     htmlAttrs: {
-      lang: 'vi'
+      lang: 'vi',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    link: [
-    ]
+    link: [],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    "~/static/main.css"
-  ],
+  css: ['~/static/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-  ],
+  buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -40,12 +39,11 @@ export default {
   router: {
     middleware: ['route'],
   },
-  
+
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
+  build: {},
 }
 
