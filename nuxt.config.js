@@ -1,6 +1,9 @@
 export default {
   target: 'server',
-  ssr:true,
+  ssr: true,
+  generate: {
+    fallback: true,
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Google Sites',

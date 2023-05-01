@@ -2,7 +2,7 @@ export const state = () => ({
   apiKey: '6435e70017e1f3fb04cb99470f43a712',
   baseURL:
     process.env.NODE_ENV == 'production'
-      ? 'https://short-api.tuvanwebsite.com'
+      ? 'https://api.goincludes.bio'
       : 'http://localhost:3200',
 })
 
